@@ -249,3 +249,13 @@ sub run {
 # ABSTRACT: Arrange number game
 
 =for Pod::Coverage ^(.+)$
+
+=head1 TODO
+
+=over
+
+=item * Record and save high scores
+
+=item * Save unfinished game
+
+=back
