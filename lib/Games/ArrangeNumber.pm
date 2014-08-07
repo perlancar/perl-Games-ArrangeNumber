@@ -258,4 +258,6 @@ sub run {
 
 =item * Save unfinished game
 
+=item * Add some animation when moving tiles
+
 =back
