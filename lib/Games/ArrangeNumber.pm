@@ -250,6 +250,11 @@ sub run {
 
 =for Pod::Coverage ^(.+)$
 
+=head1 SYNOPSIS
+
+ % arrange-number
+
+
 =head1 TODO
 
 =over
@@ -261,3 +266,8 @@ sub run {
 =item * Add some animation when moving tiles
 
 =back
+
+
+=head1 SEE ALSO
+
+L<arrange-number>
