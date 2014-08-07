@@ -8,7 +8,7 @@ use List::Util qw(shuffle);
 use Term::ReadKey;
 use Time::HiRes qw(sleep);
 
-use 5.010;
+use 5.010001;
 use Mo qw(build default);
 
 has frame_rate   => (is => 'rw', default=>15);
