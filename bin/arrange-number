@@ -1,0 +1,22 @@
+#!perl
+
+# DATE
+# VERSION
+
+use Games::ArrangeNumber;
+use Getopt::Long qw(:config auto_version auto_help);
+
+my %opts = (
+    board_size => 4,
+);
+GetOptions(
+    'size|s=i' => \$opts{board_size},
+);
+
+my $game = Games::ArrangeNumber->new(
+    board_size => $opts{board_size},
+);
+$game->run;
+
+# ABSTRACT: Arrange number game
+# PODNAME: arrange-number
