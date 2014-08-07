@@ -20,3 +20,28 @@ $game->run;
 
 # ABSTRACT: Arrange number game
 # PODNAME: arrange-number
+
+=head1 SYNOPSIS
+
+ % arrange-number     ; # default board size is 4
+ % arrange-number -s 5; # set board size (3-7)
+
+ % arrange-number --help
+ % arrange-number --version
+
+Example of game display
+
+ Moves:  58   | Time: 23
+ +-------+-------+-------+
+ |       |       |       |
+ |   3   |   5   |   2   |
+ |       |       |       |
+ +-------+-------+-------+
+ |       |       |       |
+ |   1   |   4   |   6   |
+ |       |       |       |
+ +-------+-------+-------+
+ |       |       |       |
+ |   8   |       |   9   |
+ |       |       |       |
+ `-------+-------+-------'
