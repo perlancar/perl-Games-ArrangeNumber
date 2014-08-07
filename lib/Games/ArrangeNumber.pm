@@ -60,6 +60,7 @@ sub draw_board {
     my $w = $s > 3 ? 2 : 1; # width of number
     $buf = "";
     $buf .= "How to play: press arrow keys to arrange the numbers.\n";
+    $buf .= "  Press R to restart. Q to quit.\n";
     $buf .= "\n";
     $buf .= sprintf("Moves: %3d   | Time: %d\n", $self->num_moves,
                     time-$self->start_time);
