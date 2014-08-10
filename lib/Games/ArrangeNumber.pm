@@ -219,20 +219,22 @@ sub run {
     $self->init;
     $self->new_game;
     my $ticks = 0;
+  GAME:
     while (1) {
-        my $key = $self->read_key // '';
-        if ($key eq 'q' || $key eq 'Q') {
-            last;
-        } elsif ($key eq 'r' || $key eq 'R') {
-            $self->new_game;
-        } elsif ($key eq "\e[D") { # left arrow
-            $self->move("right");
-        } elsif ($key eq "\e[A") { # up arrow
-            $self->move("down");
-        } elsif ($key eq "\e[C") { # right arrow
-            $self->move("left");
-        } elsif ($key eq "\e[B") { # down arrow
-            $self->move("up");
+        while (defined(my $key = $self->read_key)) {
+            if ($key eq 'q' || $key eq 'Q') {
+                last GAME;
+            } elsif ($key eq 'r' || $key eq 'R') {
+                $self->new_game;
+            } elsif ($key eq "\e[D") { # left arrow
+                $self->move("right");
+            } elsif ($key eq "\e[A") { # up arrow
+                $self->move("down");
+            } elsif ($key eq "\e[C") { # right arrow
+                $self->move("left");
+            } elsif ($key eq "\e[B") { # down arrow
+                $self->move("up");
+            }
         }
         $self->draw_board;
         if ($self->has_won) {
