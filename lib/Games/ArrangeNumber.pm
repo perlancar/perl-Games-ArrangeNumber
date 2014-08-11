@@ -62,7 +62,7 @@ sub draw_board {
     $buf .= "How to play: press arrow keys to arrange the numbers.\n";
     $buf .= "  Press R to restart. Q to quit.\n";
     $buf .= "\n";
-    $buf .= sprintf("Moves: %3d   | Time: %d\n", $self->num_moves,
+    $buf .= sprintf("Moves: %-4d | Time: %-5d\n", $self->num_moves,
                     time-$self->start_time);
     $buf .= $self->_col("border", "  ", (" " x ($s*(4+$w))), "  ");
     $buf .= "\n";
