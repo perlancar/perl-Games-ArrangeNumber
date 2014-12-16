@@ -19,7 +19,7 @@ my $game = Games::ArrangeNumber->new(
 $game->run;
 
 # ABSTRACT: Arrange number game
-# PODNAME: arrange-number
+# PODNAME:
 
 =head1 SYNOPSIS
 
