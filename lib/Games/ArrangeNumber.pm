@@ -257,19 +257,6 @@ sub run {
  % arrange-number
 
 
-=head1 TODO
-
-=over
-
-=item * Record and save high scores
-
-=item * Save unfinished game
-
-=item * Add some animation when moving tiles
-
-=back
-
-
 =head1 SEE ALSO
 
 L<arrange-number>
